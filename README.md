@@ -1,19 +1,18 @@
 # Marketplace Documentation
-
-Welcome to the documentation for the Marketplace e-commerce website, a platform designed to facilitate online buying and selling. This documentation provides insights into the features and functionalities of the Marketplace platform, enabling users to create accounts, log in, post items for sale, edit listings, delete listings, and contact sellers. Below, you'll find detailed explanations of each feature and how to use them.
-
-**Last Updated:** September 9th, 2023
+![Homepage_footage](images/img_1_homepage.png)
+**Last Updated:** September 17th, 2023
 
 ## Table of Contents
 
 1. [Introduction](#introduction)
 2. [Installation](#installation)
-3. [Listing Items for Sale](#listing-items-for-sale)
+3. [Browsing Items](#browsing-items)
+4. [Listing Items for Sale](#listing-items-for-sale)
    - [Adding a New Listing](#adding-a-new-listing)
    - [Editing a Listing](#editing-a-listing)
    - [Deleting a Listing](#deleting-a-listing)
-4. [Contacting Sellers](#contacting-sellers)
-5. [Legality and User Responsibilities](#legality-and-user-responsibilities)
+5. [Contacting Sellers](#contacting-sellers)
+6. [Legality and User Responsibilities](#legality-and-user-responsibilities)
 
 ## Introduction<a name="introduction"></a>
 
@@ -32,11 +31,11 @@ User accounts are at the core of the Marketplace platform. They allow you to acc
 1. Clone the Repository:
    
 ```bash
-git clone https://github.com/Sambonic/Scrapedin
+git clone https://github.com/Sambonic/marketplace
 ```
 
 ```bash
-cd Scrapedin
+cd marketplace
 ```
 
 2. Create a Python Virtual Environment:
@@ -64,7 +63,31 @@ python -m venv env
 pip install .
 ```
 
+6. Run server
+```bash
+python manage.py runserver
+```
+
+7. Copy the IP address and open it in browser which looks something like this:
+```bash
+http://152.0.0.1:8000/
+```
+
+8. Access your admin page by adding "admin" at the end of address
+```bash
+http://152.0.0.1:8000/admin
+```
+
+10. Login with username and password "admin"
+    
+## Browsing Items<a name="browsing-items"></a>
+![Browse_items](images/img_2_browse.png)
+
+Marketplace offers an intuitive way to discover items that match your preferences. Whether you're searching for a specific item by name, exploring based on descriptions, or looking within a particular category, the platform has you covered.
+
 ## Listing Items for Sale<a name="listing-items-for-sale"></a>
+
+![add_edit](images/img_3_edit_delete.png)
 
 One of the core features of the Marketplace platform is the ability to list items for sale. Whether you're a seller looking to showcase your products or a buyer searching for unique items, this feature allows you to add, edit, and delete listings effortlessly.
 
@@ -117,6 +140,8 @@ To delete a listing:
 6. Your listing is now removed from the Marketplace platform.
 
 ## Contacting Sellers<a name="contacting-sellers"></a>
+
+![contact](images/img_4_contact.png)
 
 Marketplace enables direct communication between buyers and sellers to facilitate inquiries, negotiations, and successful transactions.
 
