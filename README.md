@@ -1,6 +1,6 @@
 # Marketplace Documentation
 ![Homepage_footage](images/img_1_homepage.png)
-**Last Updated:** September 17th, 2023
+**Last Updated:** September 20th, 2023
 
 ## Table of Contents
 
@@ -70,12 +70,12 @@ python manage.py runserver
 
 7. Copy the IP address and open it in browser which looks something like this:
 ```bash
-http://152.0.0.1:8000/
+http://127.0.0.1:8000/
 ```
 
 8. Access your admin page by adding "admin" at the end of address
 ```bash
-http://152.0.0.1:8000/admin
+http://127.0.0.1:8000/admin
 ```
 
 10. Login with username and password "admin"
@@ -104,6 +104,8 @@ To add a new listing:
 4. Click "Submit" to create your listing.
 
 5. Your item is now listed on the Marketplace platform for potential buyers to see.
+
+**Note:** Media is stored locally in the project folder, as such, it will not work after deployment. Consider using and configuring project's settings to accommodate this factor by using AWS s3 bucket for instance. 
 
 ### Editing a Listing<a name="editing-a-listing"></a>
 
